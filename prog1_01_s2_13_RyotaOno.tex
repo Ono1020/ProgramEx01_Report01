@@ -1,0 +1,49 @@
+% !TeX program = XeLaTeX
+% !TeX encoding = UTF-8
+% nikachu2012 default TeX template v1.4
+% Compiler : XeLaTeX
+% TeX ver  : TeX Live 2023
+\documentclass[a4paper, xelatex, ja=standard, 10.5pt]{bxjsarticle}
+\setpagelayout*{top=25truemm,bottom=25truemm,left=25truemm,right=25truemm}
+\addtolength{\headsep}{\topskip}
+\setlength{\headsep}{15pt}
+\setlength{\footskip}{30pt}
+
+% パッケージインストール
+\usepackage{plisting}
+\usepackage{docmute}
+
+% 文書開始
+\begin{document}
+
+% 概要
+\begin{abstract}
+概要入力欄。不要な場合は削除してください。
+\end{abstract}
+
+% \maketitle
+\tableofcontents
+% \thispagestyle{empty}
+% \clearpage
+
+\section{問題設定}
+\begin{lstlisting}
+Hello.
+私は小野です。
+\end{lstlisting}
+という2行のメッセージを画面に表示する.
+
+
+\section{問題分析}
+\section{設計}
+\section{実装}
+\section{検証}
+\section{考察}
+\section{タイピング速度測定}
+\section{所感}
+
+% 参考文献
+\begin{thebibliography}{9} % 数字の最大の桁数分9追加
+  \bibitem{key1}example 工学基礎I\hspace{-1.2pt}I\hspace{-1.2pt}I
+\end{thebibliography}
+\end{document}
