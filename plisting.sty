@@ -133,6 +133,7 @@
   ndkeywordstyle={},
   stringstyle={\ttfamily},
   frame={trBl},
+  % frame={lines},
   framesep={2pt},
   breaklines=true,
   columns=[l]{fullflexible},
@@ -180,9 +181,9 @@
 %   BoldFont=HackGen-Bold.ttf
 % ]{HackGen-Regular.ttf}
 
-% \setCJKmonofont[
-%   BoldFont=HackGen-Bold.ttf
-% ]{HackGen-Regular.ttf}
+\setCJKmonofont[
+  BoldFont=HackGen-Bold.ttf
+]{HackGen-Regular.ttf}
 
 % enumerateで二段目を()書きにする
 % \renewcommand{\labelenumii}{(\arabic{enumii})}
@@ -203,15 +204,15 @@
 \renewcommand{\theparagraph}{(\Roman{paragraph})}
 \setcounter{secnumdepth}{4}
 
-\makeatletter
-\@addtoreset{equation}{section}
-\@addtoreset{figure}{section}
-\@addtoreset{table}{section}
-\makeatother
+% \makeatletter
+% \@addtoreset{equation}{section}
+% \@addtoreset{figure}{section}
+% \@addtoreset{table}{section}
+% \makeatother
 
-\renewcommand{\theequation}{\thesection.\arabic{equation}}
-\renewcommand{\thefigure}{\thesection.\arabic{figure}}
-\renewcommand{\thetable}{\thesection.\arabic{table}}
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \renewcommand{\thefigure}{\thesection.\arabic{figure}}
+% \renewcommand{\thetable}{\thesection.\arabic{table}}
 
 \pagestyle{fancy} % ヘッダー生成
 \lhead{\TEXTITLE} % 左ヘッダー
